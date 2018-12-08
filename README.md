@@ -25,6 +25,17 @@ npm install
 npm run server  (pm2 start ./server/server.js --watch)
 
 ```  
+# test
+```bash
+增
+/goods/save?name=james&desc=nba
+删
+/goods/remove?name=james
+改
+/goods/update?name=james&newName=lbrom
+查
+/goods/find
+```  
 
     
 # prod  
