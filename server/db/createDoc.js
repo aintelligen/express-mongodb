@@ -1,8 +1,8 @@
-const mongoose = require('./mongodb');
+const mongodb = require('./mongodb');
 
 class MongoDB {
   constructor(collection, schema) {
-    this.modelDB = mongoose.model(collection, schema)
+    this.modelDB = mongodb.model(collection, schema)
   }
   findAll(param = {}) {
     return new Promise((resolve, reject) => {
